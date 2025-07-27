@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LS Department of Justice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #111;
+      transition: all 0.3s ease-in-out;
+    }
+    header {
+      background-color: #0a2a52;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 2.5em;
+      margin: 0;
+    }
+    nav {
+      background-color: #0a2a52;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      background-color: white;
+      left: 0;
+      bottom: -3px;
+      transition: width 0.3s;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    .hero {
+      background-color: #f0f4fa;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero h2 {
+      color: #0a2a52;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .section h3 {
+      color: #0a2a52;
+    }
+    .footer {
+      background-color: #0a2a52;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    img.logo {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    .department-img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Seal_of_the_United_States_Department_of_Justice.svg/1024px-Seal_of_the_United_States_Department_of_Justice.svg.png" alt="DOJ Logo" class="logo" />
+    <h1>LS Department of Justice</h1>
+    <p>Federalni Kasacioni Sud – Vespucci Blvd. 47, Los Santos</p>
+  </header>
+
+  <nav>
+    <a href="#about">O nama</a>
+    <a href="#departments">Odeljenja</a>
+    <a href="#careers">Karijera</a>
+    <a href="#contact">Kontakt</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Dobrodošli na zvaničnu stranicu LS Department of Justice</h2>
+    <p>Vrhovni sudija Federalnog kasacionog suda: <strong>Bernard A. McAlister</strong></p>
+  </section>
+
+  <section class="section" id="about">
+    <h3>O nama</h3>
+    <p>
+      LS Department of Justice predstavlja najvišu pravosudnu instituciju San Andreasa. Naša misija je očuvanje zakonitosti, sprovođenje pravde i zaštita prava građana. Pored zakonodavne uloge, sarađujemo sa svim bezbednosnim i istražnim agencijama u borbi protiv kriminala.
+    </p>
+    <img src="https://static.wikia.nocookie.net/gtawiki/images/5/52/Court_House-GTAV-Exterior.jpg" alt="Zgrada suda" class="department-img" />
+  </section>
+
+  <section class="section" id="departments">
+    <h3>Naša odeljenja</h3>
+    <ul>
+      <li>
+        <strong>Vrhovni sud San Andreasa</strong><br />
+        <img src="https://i.imgur.com/3y0b8TQ.jpg" alt="Vrhovni sud" class="department-img" />
+        Najviša sudska instanca za rešavanje svih složenih pravnih sporova.
+      </li>
+      <li>
+        <strong>Federalni Kasacioni Sud</strong><br />
+        <img src="https://i.imgur.com/OPetQxX.jpg" alt="Kasacioni sud" class="department-img" />
+        Sud za rešavanje žalbi, ustavnih i proceduralnih pitanja.
+      </li>
+      <li>
+        <strong>US Marshals Service</strong><br />
+        <img src="https://i.imgur.com/XLnZ0l2.png" alt="US Marshals" class="department-img" />
+        Privođenje begunaca, zaštita svedoka i sudskih procesa.
+      </li>
+      <li>
+        <strong>Odsek za tužilaštvo</strong><br />
+        <img src="https://i.imgur.com/kfHi6i1.jpg" alt="Tužilaštvo" class="department-img" />
+        Pokretanje i zastupanje krivičnih postupaka u ime države.
+      </li>
+      <li>
+        <strong>Odsek za civilna prava</strong><br />
+        <img src="https://i.imgur.com/OA3h8Fb.jpg" alt="Civilna prava" class="department-img" />
+        Zaštita osnovnih ljudskih i građanskih prava svih građana.
+      </li>
+      <li>
+        <strong>Odsek za borbu protiv korupcije</strong><br />
+        <img src="https://i.imgur.com/79c3FFq.jpg" alt="Korupcija" class="department-img" />
+        Istrage i postupci protiv organizovanog kriminala i zloupotreba.
+      </li>
+      <li>
+        <strong>Pravosudna akademija</strong><br />
+        <img src="https://i.imgur.com/N2IcpAf.jpg" alt="Akademija" class="department-img" />
+        Obuka i usavršavanje pravnih i istražnih kadrova.
+      </li>
+    </ul>
+  </section>
+
+  <section class="section" id="careers">
+    <h3>Karijera</h3>
+    <p>
+      LS Department of Justice nudi mogućnosti za karijeru u oblastima prava, istražnih službi, administracije i više. Tražimo posvećene profesionalce koji žele da doprinesu pravednijem društvu. Pogledajte aktuelne konkurse i postanite deo tima koji čuva zakon.
+    </p>
+    <img src="https://i.imgur.com/I4W1E38.jpg" alt="Karijera u DOJ" class="department-img" />
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Kontakt</h3>
+    <p>
+      Adresa: Vespucci Blvd. 47, Los Santos<br />
+      Email: contact@lsdoj.gov<br />
+      Discord: discord.gg/lsdoj
+    </p>
+  </section>
+
+  <footer class="footer">&copy; 2025 LS Department of Justice | Sva prava zadržana.</footer>
+</body>
+</html>
